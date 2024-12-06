@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Desafio1 {
+public class Desafio3 {
 
 	public static void main(String[] args) {
 		// Desafio da estrutura while
