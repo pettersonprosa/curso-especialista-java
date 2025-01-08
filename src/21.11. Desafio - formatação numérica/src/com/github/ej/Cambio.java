@@ -27,7 +27,7 @@ public class Cambio {
         formatadorBR.setParseBigDecimal(true);
 
         BigDecimal precoProdutoEmDolar = (BigDecimal) formatadorUS.parse(precoProdutoEmDolarDigitado);
-        BigDecimal cotacaoDolarParaReal = (BigDecimal) formatadorUS.parse(cotacaoDolarParaRealDigitado);
+        BigDecimal cotacaoDolarParaReal = (BigDecimal) formatadorBR.parse(cotacaoDolarParaRealDigitado);
 
         BigDecimal precoProdutoEmReal = precoProdutoEmDolar.multiply(cotacaoDolarParaReal);
 
