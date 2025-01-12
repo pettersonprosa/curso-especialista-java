@@ -29,7 +29,7 @@ public class CalculadoraParcelas {
     private static ArrayList<LocalDate> calcularProximasParcelas (LocalDate dataPrimeiraParcela, int quantidadeParcelas) {
         ArrayList<LocalDate> datasParcelas = new ArrayList<>(quantidadeParcelas);
 
-        for (int i = 1; i <= quantidadeParcelas; i++) {
+        for (int i = 0; i <= quantidadeParcelas; i++) {
             LocalDate dataProximaParcela = dataPrimeiraParcela.plusMonths(i);
             datasParcelas.add(dataProximaParcela);
         }
